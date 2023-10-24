@@ -1,0 +1,21 @@
+{
+	"name": "formula1_pit_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "formula1_pit_source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
