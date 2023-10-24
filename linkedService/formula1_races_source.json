@@ -1,0 +1,15 @@
+{
+	"name": "formula1_races_source",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/Rizky-Darmawan/formula1-database/main/data/races.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "Rizky-Darmawan",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEU0MTZCRDRBLTBCQjEtNEZERS1COEVFLUE0NERBNUNDOENERl9lZDI4NDZhYy1hZGVjLTRkM2MtOTFjMS03NzliNjNhYmM3MjAiDQp9"
+		}
+	}
+}
