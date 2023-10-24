@@ -1,0 +1,9 @@
+{
+	"name": "formula1-data-pipeline",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "df0616db-31e0-4e0c-aa4e-68d87007b3c9",
+		"tenantId": "2901fb5f-5ed0-4e56-9ae5-b4cf014f1c38"
+	}
+}
