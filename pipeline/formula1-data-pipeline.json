@@ -343,6 +343,63 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "formula1-transform",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "formula1-copy-constructors",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "formula1-copy-pit-stops",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "formula1-copy-qualifying",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "formula1-copy-races",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "formula1-copy-results",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "formula1-copy-drivers",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/mrdarmawan24@gmail.com/formula1-data-pipeline-databricks/notebooks/formula1-data-pipeline"
+				},
+				"linkedServiceName": {
+					"referenceName": "formula1_databricks_env",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
